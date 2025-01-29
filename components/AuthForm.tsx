@@ -11,7 +11,6 @@ import {
 } from "react-hook-form";
 import { ZodType } from "zod";
 
-import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -20,12 +19,13 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+import { Input } from "./ui/input";
 import Link from "next/link";
 import { FIELD_NAMES, FIELD_TYPES } from "@/constants";
 import FileUpload from "@/components/FileUpload";
 import { toast } from "@/hooks/use-toast";
 import { useRouter } from "next/navigation";
+import { Button } from "./ui/button";
 
 interface Props<T extends FieldValues> {
   schema: ZodType<T>;
