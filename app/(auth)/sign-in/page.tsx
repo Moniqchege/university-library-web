@@ -2,8 +2,8 @@
 
 import React from "react";
 import AuthForm from "@/components/AuthForm";
-import { signInWithCredentials } from "@/lib/actions/auth";
 import { signInSchema } from "@/lib/validation";
+import { signInWithCredentials } from "@/lib/actions/auth";
 
 const Page = () => (
   <AuthForm
